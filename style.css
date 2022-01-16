@@ -2,8 +2,8 @@ body {
   margin: 0%;
   padding: 0%;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 20px;
   background-color: #e5e5e5;
+  font-size: 18px;
 }
 
 html {
@@ -25,6 +25,7 @@ html {
 }
 
 nav {
+  font-size: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,9 +72,9 @@ nav .navbar a:hover {
 }
 
 .profile {
+  font-size: 28px;
   width: 100%;
   height: 100vh;
-  font-size: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,7 +125,6 @@ nav .navbar a:hover {
 
 #content .css-typing p {
   border-right: 0.15em solid orange;
-  font-size: 1.9vw;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -353,7 +353,6 @@ nav .navbar a:hover {
   width: 100%;
   height: 100vh;
   padding-top: 10vh;
-  font-size: 15px;
 }
 
 .skills h1 {
@@ -584,16 +583,12 @@ progress::-webkit-progress-value {
   color: black;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 500;
-  font-size: 18px;
   text-align: center;
-  margin: 20px 0 10px;
+  margin: 20px 0;
   line-height: 1.1em;
 }
 
 .Projects .container .card .content .contentBx h3 span {
-  font-size: 12px;
-  font-weight: 300;
   text-transform: initial;
 }
 
@@ -608,6 +603,7 @@ progress::-webkit-progress-value {
 .Projects .container .card .sci li {
   list-style: none;
   margin: 0 10px;
+  font-size: 12px;
   -webkit-transform: translateY(40px);
           transform: translateY(40px);
   -webkit-transition: 0.5s;
@@ -623,7 +619,6 @@ progress::-webkit-progress-value {
 
 .Projects .container .card .sci li a {
   color: black;
-  font-size: 15px;
 }
 
 #card1 {
@@ -668,10 +663,9 @@ progress::-webkit-progress-value {
           flex-direction: row-reverse;
 }
 
-.contact .contentfiled {
-  width: 50%;
-  height: inherit;
-  padding: 0 10%;
+.contact .contenttext {
+  width: 100%;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -685,21 +679,20 @@ progress::-webkit-progress-value {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  line-height: 35px;
 }
 
-.contact .contentfiled a {
+.contact a {
   text-decoration: none;
   color: black;
 }
 
-.contact .contentfiled a:hover {
-  text-shadow: 0 0 5px #b1aeae;
+.contact a:hover {
+  text-shadow: 0 0 10px gray;
 }
 
 .contact .contactdoodle {
-  width: 50%;
-  height: inherit;
+  width: 100%;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -712,14 +705,13 @@ progress::-webkit-progress-value {
 }
 
 .contact .contactdoodle img {
-  width: 90%;
+  width: 60%;
   padding: 10px;
 }
 
 .credit {
   height: 5vh;
   background-color: khaki;
-  font-size: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -735,7 +727,6 @@ progress::-webkit-progress-value {
   nav {
     height: 10vh;
     padding: 10px;
-    font-size: 17px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -786,9 +777,7 @@ progress::-webkit-progress-value {
     height: 100vh;
   }
   #content .css-typing p {
-    font-size: 3vw;
     font-weight: bolder;
-    font-size: 15px;
   }
   #content ul {
     padding: 0;
@@ -796,9 +785,6 @@ progress::-webkit-progress-value {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  #content ul a {
-    font-size: 15px;
   }
   .about {
     display: -webkit-box;
@@ -810,21 +796,20 @@ progress::-webkit-progress-value {
             flex-direction: column-reverse;
     width: 100%;
     height: 85vh;
-    padding-top: 15vh;
+    padding-top: 10vh;
   }
   .about .textsection {
-    padding: 0 10%;
+    font-size: 12px;
+    padding: 5px 10%;
     width: 80%;
-    height: 60vh;
-    font-size: 3vw;
-    line-height: 30px;
+    height: 40vh;
   }
   .about .doodle {
     width: 100%;
     height: 40vh;
   }
   .about .doodle img {
-    width: 60%;
+    width: 55%;
   }
   .textsection {
     opacity: 0;
@@ -848,6 +833,7 @@ progress::-webkit-progress-value {
     height: -moz-max-content;
     height: max-content;
     padding-top: 10vh;
+    font-size: 12px;
   }
   .skills div {
     display: -ms-grid;
@@ -872,10 +858,10 @@ progress::-webkit-progress-value {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 15px;
     padding: 10px;
   }
   .Projects {
+    font-size: 12px;
     position: relative;
     z-index: 1;
     display: -webkit-box;
@@ -890,7 +876,7 @@ progress::-webkit-progress-value {
     margin: 40px 0;
   }
   .contact {
-    font-size: 4vw;
+    font-size: 14px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -907,11 +893,7 @@ progress::-webkit-progress-value {
     margin: 10px;
     width: 100%;
     height: 60vh;
-    font-size: 4vw;
     line-height: 30px;
-  }
-  .contact .contentfiled h1 {
-    font-size: 4vw;
   }
   .contact .contactdoodle {
     width: 100%;
@@ -940,5 +922,9 @@ progress::-webkit-progress-value {
 
 .contactdoodle[data-scroll="in"] {
   opacity: 1;
+}
+
+.credit {
+  font-size: 12px;
 }
 /*# sourceMappingURL=style.css.map */
