@@ -1,19 +1,23 @@
+//  ______________________________________________________________________________ Html body  __________________________________________________________________________________
+
 body {
   margin: 0%;
   padding: 0%;
   font-family: 'Outfit', sans-serif;
   background-color: #e5e5e5;
-  font-size: 18px;
+  font-size: 20px;
 }
 html {
   overflow: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+//  ______________________________________________________________________________ Scroll bar  __________________________________________________________________________________
 
 ::-webkit-scrollbar {
   width: 0;  /* Remove scrollbar space */
 }
+//  ______________________________________________________________________________ nav bar  __________________________________________________________________________________
 
 nav {
   font-size: 25px;
@@ -45,6 +49,8 @@ nav {
     }
   }
 }
+//  ______________________________________________________________________________ Profile __________________________________________________________________________________
+
 .profile {
   font-size: 28px;
   width: 100%;
@@ -72,6 +78,8 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+//  ______________________________________________________________________________ Profile typing animation__________________________________________________________________________________
+
     .css-typing p {
       border-right: 0.15em solid orange;
       white-space: nowrap;
@@ -220,6 +228,8 @@ nav {
   #img[data-scroll="in"]{
     opacity: 1;
   }
+//  ______________________________________________________________________________ About __________________________________________________________________________________
+
 .about {
   width: 100%;
   height: 85vh;
@@ -229,7 +239,7 @@ nav {
   .textsection {
     width: 50%;
     height: 85vh;
-    padding: 0 10%;
+    padding: 0 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -243,7 +253,7 @@ nav {
     justify-content: center;
     align-items: center;
     img {
-      width: 90%;
+      width: 60%;
       padding: 10px;
     }
   }
@@ -262,12 +272,14 @@ nav {
 .doodle[data-scroll="in"]{
   opacity: 1;
 }
+//  ______________________________________________________________________________ Skills __________________________________________________________________________________
+
 .skills {
   width: 100%;
   height: 100vh;
   padding-top: 10vh;
   h2 {
-    padding-left: 10%;
+    text-align: center;
   }
   div {
     display: flex;
@@ -291,6 +303,8 @@ nav {
     }
   }
 }
+//  ______________________________________________________________________________ Skills progressbar __________________________________________________________________________________
+
 progress {
   border-radius: 7px; 
   width: 80%;
@@ -331,6 +345,8 @@ progress::-webkit-progress-value {
 .tools[data-scroll="in"]{
   opacity: 1;
 }
+//  ______________________________________________________________________________ Projects __________________________________________________________________________________
+
 .Projects {
   width: 90%;
   height: max-content;
@@ -422,13 +438,14 @@ progress::-webkit-progress-value {
   .container .card .sci {
     position: absolute;
     bottom: 20px;
+    left: 8px;
     display: flex;
   }
 
   .container .card .sci li {
     list-style: none;
     margin: 0 10px;
-    font-size: 12px;
+    font-size: 15px;
     transform: translateY(40px);
     transition: 0.5s;
     opacity: 0;
@@ -467,6 +484,8 @@ progress::-webkit-progress-value {
 #card3[data-scroll="in"]{
   opacity: 1;
 }
+//  ______________________________________________________________________________ Contact __________________________________________________________________________________
+
 .contact {
   width: 100%;
   height: 85vh;
@@ -502,6 +521,8 @@ progress::-webkit-progress-value {
     }
   }
 }
+//  ______________________________________________________________________________ Credit __________________________________________________________________________________
+
 .credit{
   height: 5vh;
   background-color: khaki;
@@ -509,6 +530,7 @@ progress::-webkit-progress-value {
   justify-content: center;
   align-items: center;
 }
+//  ______________________________________________________________________________ Mrdia Query __________________________________________________________________________________
 
 @media (max-width: 576px) {
   nav {
