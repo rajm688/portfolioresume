@@ -481,6 +481,9 @@ progress::-webkit-progress-value {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   img{
+    transform: translateY(5px);
+  }
   }
   a{
     text-decoration: none;
