@@ -371,7 +371,9 @@ nav .navbar a:hover {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   width: 23%;
-  height: 65vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,7 +381,7 @@ nav .navbar a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 10px 0;
+  padding: 3% 0 5% 0;
   opacity: 0;
 }
 
@@ -474,6 +476,11 @@ progress::-webkit-progress-value {
           animation-duration: 2s;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.Projects h2,
+.Projects h4 {
+  line-height: 0;
 }
 
 .Projects .Contact {

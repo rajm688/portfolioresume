@@ -291,10 +291,10 @@ nav {
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
       backdrop-filter: blur(10px);
       width: 23%;
-      height: 65vh;
+      height: max-content;
       display: flex;
       flex-direction: column;
-      padding: 10px 0;
+      padding: 3% 0 5% 0;
       opacity: 0;
       h4 {
         text-decoration: underline;
@@ -361,6 +361,10 @@ progress::-webkit-progress-value {
   animation-name: fadeInUp;
   animation-duration: 2s;
   justify-content: space-around;
+  h2,
+  h4 {
+    line-height: 0;
+  }
   .Contact {
     width: 80%;
     height: 75vh;
