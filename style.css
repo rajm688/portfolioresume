@@ -385,6 +385,7 @@ nav .navbar a:hover {
 
 .skills div div h4 {
   text-decoration: underline;
+  line-height: 0;
 }
 
 .skills div div label {
