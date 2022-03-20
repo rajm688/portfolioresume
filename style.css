@@ -567,9 +567,10 @@ progress::-webkit-progress-value {
 
 .Projects .container .card .content .imgBx {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 80%;
+  height: 120px;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .Projects .container .card .content .imgBx img {
@@ -580,6 +581,7 @@ progress::-webkit-progress-value {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  border-radius: 20px;
 }
 
 .Projects .container .card .content .contentBx h3 {
