@@ -35,6 +35,9 @@ nav {
   z-index: 1000;
   h1 {
     color: white;
+    font-family: 'Allura', cursive;
+    font-size: 45px;
+    font-weight: 500;
   }
   .navbar {
     display: flex;
@@ -236,7 +239,7 @@ nav {
   display: flex;
   //   background-color: cornflowerblue;
   .textsection {
-    width: 50%;
+    width: 40%;
     height: 85vh;
     padding: 0 5%;
     display: flex;
@@ -246,13 +249,13 @@ nav {
     line-height: 35px;
   }
   .doodle {
-    width: 50%;
+    width: 60%;
     height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
     img {
-      width: 60%;
+      width: 80%;
       padding: 10px;
     }
   }
@@ -537,7 +540,7 @@ progress::-webkit-progress-value {
 }
 //  ______________________________________________________________________________ Mrdia Query __________________________________________________________________________________
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   nav {
     height: 10vh;
     padding: 10px;
