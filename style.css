@@ -494,6 +494,9 @@ progress::-webkit-progress-value {
     font-size: 15px;
   }
   nav h1 {
+    font-size: 30px;
+  }
+  nav .navbar {
     display: none;
   }
   .profile {
