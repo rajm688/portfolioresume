@@ -84,7 +84,7 @@ nav .navbar a:hover {
   overflow: hidden;
 }
 #content .css-typing p:nth-child(1) {
-  width: 80%;
+  width: 100%;
   animation: type 2s steps(40, end);
   animation-fill-mode: forwards;
 }
@@ -96,7 +96,7 @@ nav .navbar a:hover {
   animation-fill-mode: forwards;
 }
 #content .css-typing p:nth-child(3) {
-  width: 65%;
+  width: 100%;
   opacity: 0;
   animation: type2 2s steps(40, end);
   animation-delay: 4s;
@@ -485,7 +485,6 @@ progress::-webkit-progress-value {
 @media (max-width: 768px) {
   nav {
     height: 10vh;
-    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -502,31 +501,32 @@ progress::-webkit-progress-value {
   .profile {
     display: flex;
     flex-direction: column;
+    height: 90vh;
     width: 100%;
-    height: 100vh;
   }
   .profile #img {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     width: 100%;
-    height: 30vh;
+    height: 35vh;
   }
   .profile #img img {
     transform: translateY(50px);
-    width: 40%;
+    width: 50%;
   }
-  #content {
+  .profile #content {
     width: 100%;
-    height: 100vh;
+    height: 40vh;
   }
-  #content h1 {
-    font-size: 20px;
+  .profile #content h1 {
+    font-size: 25px;
   }
-  #content .css-typing p {
-    font-size: 17px;
+  .profile #content .css-typing p {
+    width: 100%;
+    font-size: 19px;
   }
-  #content ul {
+  .profile #content ul {
     font-size: 17px;
     padding: 0;
     margin: 0;
@@ -535,15 +535,16 @@ progress::-webkit-progress-value {
   .about {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 85vh;
-    padding-top: 10vh;
+    height: 90vh;
+    padding-top: 0px;
   }
   .about .textsection {
-    font-size: 12px;
-    padding: 5px 10%;
+    font-size: 15px;
     width: 80%;
-    height: 40vh;
+    height: 45vh;
     line-height: 22px;
     text-align: justify;
   }
@@ -552,10 +553,12 @@ progress::-webkit-progress-value {
   }
   .about .doodle {
     width: 100%;
-    height: 40vh;
+    height: 45vh;
+    opacity: 0;
+    transition: all 4s;
   }
   .about .doodle img {
-    width: 55%;
+    width: 80%;
   }
   .textsection {
     opacity: 0;
@@ -563,10 +566,6 @@ progress::-webkit-progress-value {
   }
   .textsection[data-scroll=in] {
     opacity: 1;
-  }
-  .doodle {
-    opacity: 0;
-    transition: all 4s;
   }
   .doodle[data-scroll=in] {
     opacity: 1;
@@ -582,7 +581,9 @@ progress::-webkit-progress-value {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    padding: 20px;
+    margin-bottom: 10px;
   }
   .skills div div {
     width: 95%;

@@ -89,7 +89,7 @@ nav {
     overflow: hidden;
   }
   .css-typing p:nth-child(1) {
-    width: 80%;
+    width: 100%;
     -webkit-animation: type 2s steps(40, end);
     animation: type 2s steps(40, end);
     -webkit-animation-fill-mode: forwards;
@@ -108,7 +108,7 @@ nav {
   }
 
   .css-typing p:nth-child(3) {
-    width: 65%;
+    width: 100%;
     opacity: 0;
     -webkit-animation: type2 2s steps(40, end);
     animation: type2 2s steps(40, end);
@@ -538,12 +538,11 @@ progress::-webkit-progress-value {
   justify-content: center;
   align-items: center;
 }
-//  ______________________________________________________________________________ Mrdia Query __________________________________________________________________________________
+//  ______________________________________________________________________________ Media Query __________________________________________________________________________________
 
 @media (max-width: 768px) {
   nav {
     height: 10vh;
-    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -560,29 +559,29 @@ progress::-webkit-progress-value {
   .profile {
     display: flex;
     flex-direction: column;
+    height: 90vh;
     width: 100%;
-    height: 100vh;
     #img {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: start;
       width: 100%;
-      height: 30vh;
+      height:35vh;
       img {
         transform: translateY(50px);
-        width: 40%;
+        width: 50%;
       }
     }
-  }
   #content {
     width: 100%;
-    height: 100vh;
+    height: 40vh;
     h1 {
-      font-size: 20px;
+      font-size: 25px;
     }
     .css-typing {
       p {
-        font-size: 17px;
+        width: 100%;
+        font-size: 19px;
       }
     }
     ul {
@@ -592,17 +591,19 @@ progress::-webkit-progress-value {
       align-items: center;
     }
   }
+}
   .about {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 85vh;
-    padding-top: 10vh;
+    height: 90vh;
+    padding-top: 0px;
     .textsection {
-      font-size: 12px;
-      padding: 5px 10%;
+      font-size: 15px;
       width: 80%;
-      height: 40vh;
+      height: 45vh;
       line-height: 22px;
       text-align: justify;
       .no {
@@ -611,10 +612,12 @@ progress::-webkit-progress-value {
     }
     .doodle {
       width: 100%;
-      height: 40vh;
+      height: 45vh;
       img {
-        width: 55%;
+        width: 80%;
       }
+      opacity: 0;
+      transition: all 4s;
     }
   }
   .textsection {
@@ -623,10 +626,6 @@ progress::-webkit-progress-value {
   }
   .textsection[data-scroll="in"] {
     opacity: 1;
-  }
-  .doodle {
-    opacity: 0;
-    transition: all 4s;
   }
   .doodle[data-scroll="in"] {
     opacity: 1;
@@ -640,7 +639,9 @@ progress::-webkit-progress-value {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
       align-items: center;
-      gap: 10px;
+      gap: 15px;
+      padding: 20px;
+      margin-bottom: 10px;
       div {
         width: 95%;
         height: max-content;
